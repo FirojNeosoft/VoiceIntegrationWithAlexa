@@ -1,0 +1,37 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+            {
+              "name": "GreetingIntent",
+              "samples": [
+                    "hey",
+                    "hi",
+                    "hello",
+                    "good morning"
+                ]
+            },
+            {
+              "name": "BalanceCheckingIntent",
+              "slots": [
+                         {
+                          "name": "customerName",
+                          "type": "AMAZON.Person"
+                         }
+                       ],
+              "samples": [
+                    "{customerName}",
+                    "give me a balance of {customerName}",
+                    "for {customerName}",
+                    "I want balance for {customerName}",
+                    "balance of {customerName}",
+                    "may i get balance for {customerName}",
+                    "can i get balance for {customerName}",
+                    "send balance of {customerName}",
+                    "I'd like to see balance {customerName} "
+                ]
+            }
+          ]
+        }
+    }
+}
